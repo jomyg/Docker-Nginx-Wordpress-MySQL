@@ -3,17 +3,17 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
 ## Description:
+
 A Nginx HTTPS reverse proxy is an intermediary proxy service which takes a client request, passes it on to one or more servers, and subsequently delivers the server’s response back to the client. While most common applications are able to run as web server on their own, the Nginx web server is able to provide a number of advanced features such as load balancing, TLS/SSL capabilities and acceleration that most specialized applications lack. By using a Nginx reverse proxy, all applications can benefit from these features.
 
 There are significant benefits to setting up a Nginx HTTPS reverse proxy:
-
-    Increased Security: A Nginx reverse proxy also acts as a line of defense for your backend servers. Configuring a reverse proxy ensures that the identity of your backend servers remains unknown.
-    Better Performance: Nginx has been known to perform better in delivering static content file and analyse URLs
-    Easy Logging and Auditing: Since there is only one single point of access when a Nginx reverse proxy is implemented, this makes logging and auditing much simpler.
-    Encrypted Connection By encrypting the connection between the client and the Nginx reverse Proxy with TLS, users profit from a encrypted and securized HTTPS connection, protecting their data.
-    
+```
+Increased Security: A Nginx reverse proxy also acts as a line of defense for your backend servers. Configuring a reverse proxy ensures that the identity of your backend servers remains unknown.
+Better Performance: Nginx has been known to perform better in delivering static content file and analyse URLs
+Easy Logging and Auditing: Since there is only one single point of access when a Nginx reverse proxy is implemented, this makes logging and auditing much simpler.
+Encrypted Connection By encrypting the connection between the client and the Nginx reverse Proxy with TLS, users profit from a encrypted and securized HTTPS connection, protecting their data.
 Nginx-proxy sets up a container running nginx and docker-gen. docker-gen generates reverse proxy configs for nginx and reloads nginx when containers are started and stopped
-
+```
 
 
 ## 1. Docker installation
